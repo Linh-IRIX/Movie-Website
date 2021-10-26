@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./movie.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="./movie.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- Logo -->
+        <nav class="navbar navbar-light ">
+            <a class="navbar-brand" href="./index.html">
+            <img src="https://xemphim.fun/static/skin/logo-full.png" width="112" height="28" alt="Xem Phim Logo">
+            </a>
+        </nav>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span>
+                        <i class="fas fa-search"></i>
+                        Tìm kiếm
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Phim Lẻ</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Phim Bộ</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Tất cả phim</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn btn-danger">Đăng nhập</button>
+          </form>
+        </div>
+      </nav>
+
+      <!-- select -->
+      <div class="container group-filter">
+          <div class="filter">
+                <div class="title-filter">
+                    <label for="">Thể loại:</label>
+                </div>
+                <div class="select">
+                    <select id="category">
+                        <option value="">- Tất cả -</option>
+                    </select>
+                </div>
+          </div>
+
+          <div class="filter">
+                <div class="title-filter">
+                    <label for="">Quốc gia:</label>
+                </div>
+                <div class="select">
+                    <select id="country">
+                        <option value="">- Tất cả -</option>
+                    </select>
+                </div>
+           </div>
+
+            <div class="filter">
+                <div class="title-filter">
+                    <label for="">Năm:</label>
+                </div>
+                <div class="select">
+                    <select id="year">
+                        <option value="">- Tất cả -</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="filter">
+                    <div class="title-filter">
+                        <label for="">Sắp xếp:</label>
+                    </div>
+                    <div class="select">
+                        <select id="sort">
+                            
+                        </select>
+                    </div>
+            </div>
+      </div>
+
+      <!-- Title Filter -->
+    <div class="title-movie container">
+        <h4>Phim đề cử</h4>
+    </div>
+
+    <!-- Filter movie -->
+    <div class="container" id="main-filter">
+        
+    </div>
+
+    <!-- Empty movie -->
+    <div class="container" id="empty-movie">
+        <h3>Không thấy phim bạn muốn xem? <br> Hãy thử lại với lựa chọn khác! <i class="far fa-smile-wink"></i></h3>
+    </div>
+
+    <!-- Pagination -->
+    <div class="container" id="pagination">
+        
+    </div>
+</body>
+</html>

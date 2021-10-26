@@ -1,0 +1,191 @@
+body {
+    background-color: #06121e;
+}
+
+/* Header */
+.container{
+    max-width: 1334px;
+}
+
+.nav-link {
+    color: white;
+    width: 7em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.nav-link:focus, .nav-link:hover {
+    background-color: #102c48;
+    color: #428bca;
+}
+
+a{
+    color: white;
+}
+
+span {
+    display: flex;
+    width: 100%;
+}
+
+i {
+    width: 1em;
+    height: 1em;
+    margin-top: 5px;
+    margin-right: 2px;
+}
+
+.form-inline button {
+    width: 6.7em;
+    height: 2.9em;
+}
+
+/* filter */
+.group-filter {
+    display: flex;
+    background-color: #091c2d;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.filter {
+    width: 20%;
+    margin: 0.75em;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+select {
+    width: 100%;
+    height: 2.5em;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 0.5em 0 0.5em;
+}
+
+/* Movie*/
+#main-filter {
+    display: flex;
+    width: 1334px;
+    flex-wrap: wrap;
+    margin-top: 2.2em;
+}
+
+.title-movie {
+    border-bottom: 1px solid #428bca;
+    margin-bottom: 1em;
+}
+
+h4 {
+    margin: 1em 0 0.3em 0;
+    color: #b1a21e;
+    text-transform: uppercase;
+}
+
+.filter-movie {
+   width: 18%;
+   margin-bottom: 1em;
+   margin-left: 1.5em;
+}
+
+.filter-movie img {
+    height: 384px;
+}
+
+.card-title {
+    margin-bottom: 0em;
+}
+
+h5 {
+    margin-top: 0.3em;
+    margin-bottom: 0em;
+    color: #dbdbdb;
+    height: 32px;
+    width: 230px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+h6 {
+    color: #7a7a7a;
+    height: 32px;
+    width: 230px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* empty movie */
+#empty-movie {
+    display: flex;
+    justify-content: center;
+    margin: 4em;
+}
+
+#empty-movie h3{
+    color: #fff;
+    font-size: 1.5em;
+}
+
+#empty-movie i {
+    color: #dcf836;
+}
+
+/* Pagination */
+#pagination {
+    display: flex;
+}
+
+.page-link {
+    background-color: #06121e;
+    color: white;
+    margin: .25rem;
+    min-width: 2.7rem;
+    font-size: 1.3em;
+    justify-content: center;
+    padding-left: .5em;
+    padding-right: .5em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.page-default:hover {
+    color: #dcf836;
+    background-color: #06121e;
+    border-color: #dcf836;
+}
+
+.is-current, .disable-page-hover:hover {
+    background-color: #428bca;
+    border-color: #428bca;
+    color: #fff;
+}
+
+#pagination-right {
+   display: flex;
+   margin-left: auto;
+   margin-bottom: 2em;
+}
+
+#pagination-right a {
+    cursor: pointer;
+    min-width: 7em;
+    height: 40px;
+    font-size: 1em;
+}
+
+.page-item span {
+   max-width: 40px;
+}
